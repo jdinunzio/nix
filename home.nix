@@ -40,10 +40,11 @@
     dropbox
     jetbrains.idea-community
     jetbrains.pycharm-community-bin
-    mvp
+    mpv
     #steam
     typora
     vscode
+
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -74,9 +75,21 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    SHELL = "/run/current-system/sw/bin/fish";
   };
 
   # programs configuration
+  programs.fish = {
+    enable = true;
+    functions = {
+      # ls = "command ls --indicator-style=classify --group-directories-first --color $argv";
+      dir = "ls -alh --indicator-style=classify --group-directories-first --color $argv";
+    };
+    shellAliases = {
+      ls = "ls --indicator-style=classify --group-directories-first --color";
+    };
+  };
+
   programs.git = {
     enable = true;
     userName = "jose";
@@ -152,6 +165,10 @@
     ${builtins.readFile ./nvim/options.lua}
     '';
 
+  };
+
+  programs.vscode = {
+    enable = true;
   };
 
   # Let Home Manager install and manage itself.
