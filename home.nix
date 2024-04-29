@@ -82,10 +82,12 @@
   programs.fish = {
     enable = true;
     functions = {
-      # ls = "command ls --indicator-style=classify --group-directories-first --color $argv";
-      dir = "ls -alh --indicator-style=classify --group-directories-first --color $argv";
+      dir = "grc ls -alh --indicator-style=classify --group-directories-first --color $argv";
+      ps = "grc ps $argv";
     };
     shellAliases = {
+      # something was overwriting function defined in ./dotfiles/fish/ls.fish,
+      # so we define it here, since shellAliases has priority.
       ls = "ls --indicator-style=classify --group-directories-first --color";
     };
   };
