@@ -11,7 +11,7 @@
     # langs
     #kotlin
     #nodejs_21
-    #python312
+    python312
     #rustc
     #rustfmt
     #swiPrologWithGui
@@ -73,9 +73,14 @@
     };
   };
 
+  home.language = {
+    collate = "C";
+  };
+
   home.sessionVariables = {
     EDITOR = "nvim";
     SHELL = "/run/current-system/sw/bin/fish";
+    LC_COLLATE = "C";
   };
 
   # programs configuration
@@ -106,6 +111,8 @@
       co = "checkout";
       lg = "log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate=full";
       st = "status";
+      comain = "!git co main && git pull origin main && git pull origin --tags &&  git remote prune origin";
+      co2main = "!f() { git co $1 && git rebase main; }; f";
     };
   };
 
