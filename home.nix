@@ -22,6 +22,7 @@
     awscli
     direnv
     google-cloud-sdk-gce
+    httpie
     k3d
     kind
     krew
