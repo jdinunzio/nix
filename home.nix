@@ -20,6 +20,7 @@
 
     #devel
     awscli
+    devenv
     direnv
     google-cloud-sdk-gce
     httpie
@@ -95,6 +96,7 @@
       # something was overwriting function defined in ./dotfiles/fish/ls.fish,
       # so we define it here, since shellAliases has priority.
       ls = "ls --indicator-style=classify --group-directories-first --color";
+      df = "grc df -h $argv";
     };
   };
 
