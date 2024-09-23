@@ -18,16 +18,28 @@
 
   home.packages = with pkgs; [
     # langs
-    python312
+    python312Full
+    python312Packages.pip
+    temurin-jre-bin-21
+    # go
+    bazel
+    bazelisk
+    go
+    mage
+    protobuf
+    protoc-gen-go
+    grpcui
 
-    #devel
-    awscli
+    # devel
+    # awscli2
     devenv
-    google-cloud-sdk-gce
+    # google-cloud-sdk-gce
+    gnumake42
     httpie
     k3d
     kind
     krew
+    ruff
 
     # cli
     ack
@@ -36,16 +48,26 @@
     fzf
     jq
     just
+    lm_sensors
     yq
+    xsensors
 
     # apps
     dropbox
+    firefox
+    gnomeExtensions.system-monitor
     jetbrains.idea-community
+    #jetbrains.goland
     jetbrains.pycharm-community-bin
+    maestral  # dropbox replacement
+    maestral-gui
     mpv
-
     #steam
     typora
+    vdhcoapp
+
+    # libs
+    zlib
   ];
 
   home.language = {
