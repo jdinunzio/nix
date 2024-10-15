@@ -25,6 +25,8 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
+      vim-just
+
       {
         plugin = nvim-lspconfig;
         config = toLuaFile ./nvim/plugin/lsp.lua;

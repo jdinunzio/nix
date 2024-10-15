@@ -46,6 +46,8 @@
     bat
     encfs
     fzf
+    gifsicle
+    imagemagick
     jq
     just
     lm_sensors
@@ -67,6 +69,7 @@
     vdhcoapp
 
     # libs
+    libwebp
     zlib
   ];
 
