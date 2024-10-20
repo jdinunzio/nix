@@ -18,6 +18,7 @@
 
   home.packages = with pkgs; [
     # langs
+    #python313Full
     python312Full
     python312Packages.pip
     temurin-jre-bin-21
@@ -51,6 +52,7 @@
     jq
     just
     lm_sensors
+    nixVersions.nix_2_23
     yq
     xsensors
 
