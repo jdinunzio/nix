@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, pkgs-unstable, inputs, ... }:
 
 {
   home.username = "goyo";
@@ -16,64 +16,69 @@
   # You should not change this value.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  home.packages = with pkgs; [
-    # langs
-    #python313Full
-    python312Full
-    python312Packages.pip
-    temurin-jre-bin-21
-    # go
-    bazel
-    bazelisk
-    go
-    mage
-    protobuf
-    protoc-gen-go
-    grpcui
+  home.packages = 
+    (with pkgs; [
+      # langs
+      #python313Full
+      python312Full
+      python312Packages.pip
+      temurin-jre-bin-21
+      # go
+      bazel
+      bazelisk
+      go
+      mage
+      protobuf
+      protoc-gen-go
+      grpcui
 
-    # devel
-    # awscli2
-    devenv
-    # google-cloud-sdk-gce
-    gnumake42
-    httpie
-    k3d
-    kind
-    krew
-    ruff
+      # devel
+      # awscli2
+      # devenv
+      # google-cloud-sdk-gce
+      gnumake42
+      httpie
+      k3d
+      kind
+      krew
+      ruff
 
-    # cli
-    ack
-    bat
-    encfs
-    fzf
-    gifsicle
-    imagemagick
-    jq
-    just
-    lm_sensors
-    nixVersions.nix_2_23
-    yq
-    xsensors
+      # cli
+      ack
+      bat
+      encfs
+      fzf
+      gifsicle
+      imagemagick
+      jq
+      just
+      lm_sensors
+      nixVersions.nix_2_23
+      yq
+      xsensors
 
-    # apps
-    dropbox
-    firefox
-    gnomeExtensions.system-monitor
-    jetbrains.idea-community
-    #jetbrains.goland
-    jetbrains.pycharm-community-bin
-    maestral  # dropbox replacement
-    maestral-gui
-    mpv
-    #steam
-    typora
-    vdhcoapp
+      # apps
+      dropbox
+      firefox
+      gnomeExtensions.system-monitor
+      jetbrains.idea-community
+      #jetbrains.goland
+      jetbrains.pycharm-community-bin
+      maestral  # dropbox replacement
+      maestral-gui
+      mpv
+      #steam
+      typora
+      vdhcoapp
 
-    # libs
-    libwebp
-    zlib
-  ];
+      # libs
+      libwebp
+      zlib
+    ]) 
+    ++ 
+    (with pkgs-unstable; [
+      devenv
+    ]);
 
   home.language = {
     collate = "C";
