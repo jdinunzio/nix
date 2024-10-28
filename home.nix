@@ -6,6 +6,7 @@
 
   imports = [
     ./direnv.nix
+    ./dotfiles.nix
     ./fish.nix
     ./git.nix
     ./neovim.nix
@@ -55,6 +56,7 @@
       lm_sensors
       nixVersions.nix_2_23
       yq
+      wmctrl
       xsensors
 
       # apps
