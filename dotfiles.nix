@@ -1,7 +1,7 @@
 {
   home.file = {
-    ".fish" = {
-      source = ./dotfiles/fish;
+    ".config/bat" = {
+      source = ./dotfiles/bat;
       recursive = true;
     };
   };
