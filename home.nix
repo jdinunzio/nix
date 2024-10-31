@@ -10,6 +10,7 @@
     ./fish.nix
     ./git.nix
     ./neovim.nix
+    ./shell.nix
     ./ssh.nix
     ./vscode.nix
   ];
@@ -49,7 +50,9 @@
       bat
       encfs
       fzf
+      fishPlugins.grc
       gifsicle
+      grc
       imagemagick
       jq
       just
