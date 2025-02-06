@@ -47,17 +47,25 @@ function man --description 'Format and display the on-line manual pages'
         end
     end
 
-	# set colors for man
+	## set man colors
+	#
+	# tput colors:
+	#   0:black,  1:red,      2:green,   3:yellow
+	#   4:blue,   5:magenta,  6:cyan,   7:white
+	#
+	# mb: blink
 	set -x LESS_TERMCAP_mb $(tput bold; tput setaf 2) # green
-	# md/me: bold
-	set -x LESS_TERMCAP_md $(tput bold; tput setaf 2) # green
+	# me: end all modes
 	set -x LESS_TERMCAP_me $(tput sgr0)
+	# md: bold
+	set -x LESS_TERMCAP_md $(tput bold; tput setaf 2) # green
 	# so/se: stand-out/reverse
 	set -x LESS_TERMCAP_so $(tput bold; tput setaf 3; tput setab 4) # yellow on blue
 	set -x LESS_TERMCAP_se $(tput rmso; tput sgr0)
 	# us/ue: underline
 	set -x LESS_TERMCAP_us $(tput smul; tput bold; tput setaf 6) # cyan
 	set -x LESS_TERMCAP_ue $(tput rmul; tput sgr0)
+	# reverse, dim, others...
 	set -x LESS_TERMCAP_mr $(tput rev)
 	set -x LESS_TERMCAP_mh $(tput dim)
 	set -x LESS_TERMCAP_ZN $(tput ssubm)
