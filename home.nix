@@ -63,6 +63,7 @@
       xsensors
 
       # apps
+      brave
       dropbox
       firefox
       gnomeExtensions.system-monitor
@@ -73,6 +74,7 @@
       maestral-gui
       mpv
       #steam
+      speechd
       typora
       vdhcoapp
 
