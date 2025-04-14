@@ -21,6 +21,7 @@
   home.packages = 
     (with pkgs; [
       # langs
+      ghc
       #python313Full
       python312Full
       python312Packages.pip
@@ -76,7 +77,6 @@
       #steam
       speechd
       typora
-      vdhcoapp
 
       # libs
       libwebp
@@ -85,6 +85,7 @@
     ++ 
     (with pkgs-unstable; [
       devenv
+      vdhcoapp
     ]);
 
   home.language = {
@@ -96,6 +97,9 @@
   };
 
   # Let Home Manager install and manage itself.
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnfreePredicate = (_: true);
+  };
   programs.home-manager.enable = true;
 }
