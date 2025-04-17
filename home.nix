@@ -60,6 +60,7 @@
       lm_sensors
       nixVersions.nix_2_23
       yq
+      yt-dlp
       wmctrl
       xsensors
 
@@ -73,6 +74,7 @@
       jetbrains.pycharm-community-bin
       maestral  # dropbox replacement
       maestral-gui
+      media-downloader
       mpv
       #steam
       speechd
@@ -86,6 +88,7 @@
     (with pkgs-unstable; [
       devenv
       vdhcoapp
+      video-downloader
     ]);
 
   home.language = {
