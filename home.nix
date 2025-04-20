@@ -84,10 +84,18 @@
       # libs
       libwebp
       zlib
+
+      # vim
+      lua51Packages.lua
+      luarocks-nix
+      fd
+      lazygit
+      ripgrep
     ]) 
     ++ 
     (with pkgs-unstable; [
       devenv
+      neovim
       vdhcoapp
       video-downloader
     ]);
