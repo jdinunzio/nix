@@ -9,7 +9,6 @@
     ./dotfiles.nix
     ./fish.nix
     ./git.nix
-    ./neovim.nix
     ./shell.nix
     ./ssh.nix
     ./vscode.nix
@@ -21,6 +20,7 @@
   home.packages = 
     (with pkgs; [
       # langs
+      gcc
       ghc
       #python313Full
       python312Full
@@ -72,6 +72,7 @@
       jetbrains.idea-community
       #jetbrains.goland
       jetbrains.pycharm-community-bin
+      kitty
       maestral  # dropbox replacement
       maestral-gui
       media-downloader
