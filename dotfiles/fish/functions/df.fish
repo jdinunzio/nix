@@ -1,3 +1,3 @@
 function df
-    command df -h $argv
+    command df -h -x tmpfs $argv
 end

@@ -9,17 +9,19 @@
     ./dotfiles.nix
     ./fish.nix
     ./git.nix
+    ./nvim.nix
     ./shell.nix
     ./ssh.nix
     ./vscode.nix
   ];
 
   # You should not change this value.
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+  home.stateVersion = "24.11"; # Please read the comment before changing.
 
   home.packages = 
     (with pkgs; [
       # langs
+      cargo
       gcc
       ghc
       #python313Full
@@ -31,6 +33,7 @@
       bazelisk
       go
       mage
+      nodejs_23
       protobuf
       protoc-gen-go
       grpcui
@@ -85,17 +88,10 @@
       libwebp
       zlib
 
-      # vim
-      lua51Packages.lua
-      luarocks-nix
-      fd
-      lazygit
-      ripgrep
     ]) 
     ++ 
     (with pkgs-unstable; [
       devenv
-      neovim
       vdhcoapp
       video-downloader
     ]);
