@@ -53,6 +53,7 @@
       ack
       bat
       encfs
+      ffmpeg
       fzf
       fishPlugins.grc
       gifsicle
@@ -76,6 +77,7 @@
       #jetbrains.goland
       jetbrains.pycharm-community-bin
       kitty
+      libreoffice-fresh
       maestral  # dropbox replacement
       maestral-gui
       media-downloader
