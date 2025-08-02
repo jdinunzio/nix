@@ -60,7 +60,6 @@
       grc
       imagemagick
       jq
-      just
       lm_sensors
       nixVersions.nix_2_23
       yq
@@ -94,6 +93,7 @@
     ++ 
     (with pkgs-unstable; [
       devenv
+      just
       vdhcoapp
       video-downloader
     ]);
