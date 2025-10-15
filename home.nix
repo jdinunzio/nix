@@ -33,7 +33,7 @@
       bazelisk
       go
       mage
-      nodejs_23
+      #nodejs_23
       protobuf
       protoc-gen-go
       grpcui
@@ -56,12 +56,14 @@
       ffmpeg
       fzf
       fishPlugins.grc
+      gh
       gifsicle
       grc
       imagemagick
       jq
       lm_sensors
-      nixVersions.nix_2_23
+      nixVersions.nix_2_28
+      rar
       yq
       yt-dlp
       wmctrl
@@ -69,9 +71,11 @@
 
       # apps
       brave
+      comical
       dropbox
       firefox
       gnomeExtensions.system-monitor
+      helix
       jetbrains.idea-community
       #jetbrains.goland
       jetbrains.pycharm-community-bin
