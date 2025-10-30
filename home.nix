@@ -26,7 +26,9 @@
       ghc
       #python313Full
       python312Full
+      python313Packages.jedi-language-server
       python312Packages.pip
+      python312Packages.python-lsp-server
       temurin-jre-bin-21
       # go
       bazel
@@ -62,6 +64,7 @@
       imagemagick
       jq
       lm_sensors
+      mmv-go
       nixVersions.nix_2_28
       rar
       yq
