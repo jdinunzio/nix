@@ -99,6 +99,7 @@
     ]) 
     ++ 
     (with pkgs-unstable; [
+      devbox
       devenv
       just
       vdhcoapp
