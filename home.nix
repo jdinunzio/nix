@@ -102,8 +102,20 @@
       devbox
       devenv
       just
+      nil
+      ty
       vdhcoapp
       video-downloader
+      
+      # lsp
+      docker-language-server
+      docker-compose-language-service
+      fish-lsp
+      just-lsp
+      jq-lsp
+      tombi
+      superhtml
+      yaml-language-server
     ]);
 
   home.language = {
