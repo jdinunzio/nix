@@ -82,7 +82,6 @@
       jetbrains.idea-community
       #jetbrains.goland
       jetbrains.pycharm-community-bin
-      kitty
       libreoffice-fresh
       maestral  # dropbox replacement
       maestral-gui
@@ -99,13 +98,16 @@
     ]) 
     ++ 
     (with pkgs-unstable; [
+      # cli
       devbox
       devenv
       just
+      kitty
       nil
       ty
       vdhcoapp
       video-downloader
+      yazi
       
       # lsp
       docker-language-server
@@ -113,8 +115,10 @@
       fish-lsp
       just-lsp
       jq-lsp
+      taplo
       tombi
       superhtml
+      vscode-langservers-extracted
       yaml-language-server
     ]);
 

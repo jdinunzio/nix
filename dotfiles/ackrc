@@ -1,0 +1,5 @@
+--ignore-dir=tmp/
+--ignore-dir=.venv/
+--ignore-dir=venv/
+--ignore-dir=.devenv/
+--ignore-dir=.direnv/

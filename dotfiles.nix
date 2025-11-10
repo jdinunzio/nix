@@ -4,5 +4,8 @@
       source = ./dotfiles/bat;
       recursive = true;
     };
+    ".ackrc" = {
+      source = ./dotfiles/ackrc;
+    };
   };
 }
