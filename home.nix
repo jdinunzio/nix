@@ -54,6 +54,7 @@
       # cli
       ack
       bat
+      below
       encfs
       ffmpeg
       fzf
