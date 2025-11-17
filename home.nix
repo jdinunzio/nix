@@ -131,6 +131,12 @@
     LC_COLLATE = "C";
   };
 
+  dconf.settings = {
+    "org.gnome.desktop.wm.keybindings" = {
+      switch-group = ["<Super>Above_Tab"];
+    };
+  };
+
   # Let Home Manager install and manage itself.
   nixpkgs.config = {
     allowUnfree = true;
