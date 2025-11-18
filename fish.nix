@@ -17,9 +17,9 @@
     interactiveShellInit =
       ''
         set -g LESSOPEN "|bat --paging=never --color=always %s"
-        # todo: remove this once neovim>=0.11 is in stable,
-        # and it has been configured with programs.neovim
-        set -g EDITOR "vim"
+        # note: this shouldn't be necessary, since it should be automatically set by
+        # helix.nix.
+        set -g EDITOR "hx"
       '';
   };
 

@@ -9,6 +9,8 @@
     ./dotfiles.nix
     ./fish.nix
     ./git.nix
+    ./helix.nix
+    ./kitty.nix
     ./nvim.nix
     ./shell.nix
     ./ssh.nix
@@ -103,7 +105,7 @@
       devbox
       devenv
       just
-      kitty
+      # kitty
       nil
       ty
       vdhcoapp
